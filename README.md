@@ -14,7 +14,7 @@ To check a copy of a file, run `sha256sum <file>` and `git hash-object <file>`. 
 
 - **Why:** the 3Dogs committee's decision #2589 (9 Nov 2026, APPROVE WITH CHANGES), condition 3, requires the fingerprints of these three modules to be published outside the build server before they are installed.
 - **Source:** taken from the staged files at 2026-11-09 22:10:48 UTC.
-- **Status:** staged, not installed.
+- **Status:** installed 2026-11-09 22:45:27-22:45:30 UTC under decision #2613, with both new switches in shadow mode. After the install, the live files were re-hashed, and all three match this table (SHA-256 and git blob id).
 
 | File | Bytes | SHA-256 | Git blob id |
 |---|---|---|---|
@@ -24,4 +24,13 @@ To check a copy of a file, run `sha256sum <file>` and `git hash-object <file>`. 
 
 Machine-readable copy: [`2026-11-09-lockgate-part1.sha256`](2026-11-09-lockgate-part1.sha256).
 
-The install commit id will be added to this entry once the files are installed.
+Published as release [`lockgate-part1-20261109`](https://github.com/DKJager/3dogs-attestations/releases/tag/lockgate-part1-20261109) on 2026-11-09 at 22:30:35 UTC, before the install.
+
+Install commits in the build server's harness repository:
+
+| File | Install commit |
+|---|---|
+| `locked_test_gate.py` | `75411c64bb90ba018ffd22cd9ca1b8aff68c202f` |
+| `gatehard.py` | `b83d30fe1a42e007a4b9ead238d10eaa78eaf340` |
+| `foreman.py` | `53ab82c4e09ffffd0ae492f2ea575c248f9c7ab5` |
+| install log (retention units, sealed audit log) | `a671bbfa538cfb01eb97746efc990f31da7b7aa7` |
