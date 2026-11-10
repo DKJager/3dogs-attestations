@@ -92,3 +92,16 @@ Machine-readable copy: [`2026-11-10-foreman-2630.sha256`](2026-11-10-foreman-263
 | `locked_test_gate.py` | 48924 | `82216fd9b20913c6d64ebdbddd9230a38bfe9dbb973a462e36e25cfc7aa74a7a` | `141f0f9e28e718653dbd1fc0df56ad3e9d5e5314` |
 
 Machine-readable copy: [`2026-11-10-locked-test-gate-2619.sha256`](2026-11-10-locked-test-gate-2619.sha256).
+
+## 2026-11-10: foreman.py, path-normalisation fix (harness-fix Job 2)
+
+- **Decision:** 3Dogs committee #2631 (APPROVE WITH CHANGES; the required de-duplication is included).
+- **Installed:** 2026-11-10 02:09:59 UTC. The switch stays in shadow mode.
+- **Replaces:** the `foreman.py` from the #2630 entry above (SHA-256 `0691c099c5c826a851919ea187e9facf5d7f189d970113f57dc0d01f5ecebaf0`).
+- **Recorded after the install**, from the live file and the install commit.
+
+| File | Bytes | SHA-256 | Git blob id | Install commit |
+|---|---|---|---|---|
+| `foreman.py` | 205435 | `5085d823ed6953c8ba7e9a848b4df3b9420128962aeadca8b2dccd69f446f0c0` | `ba2519afcd3e22cf869bb1863e4a8a61113e2aee` | `1f9b87d3b981264f040dba5923f04e291bde0ee3` |
+
+Machine-readable copy: [`2026-11-10-foreman-2631.sha256`](2026-11-10-foreman-2631.sha256).
