@@ -34,3 +34,16 @@ Install commits in the build server's harness repository:
 | `gatehard.py` | `b83d30fe1a42e007a4b9ead238d10eaa78eaf340` |
 | `foreman.py` | `53ab82c4e09ffffd0ae492f2ea575c248f9c7ab5` |
 | install log (retention units, sealed audit log) | `a671bbfa538cfb01eb97746efc990f31da7b7aa7` |
+
+## 2026-11-10: foreman.py, TESTS1LINE fix (harness-fix Job 2)
+
+- **Decision:** 3Dogs committee #2625 (APPROVE WITH CHANGES).
+- **Installed:** 2026-11-10 00:14:03 UTC. The TESTS1LINE switch stays in shadow mode.
+- **Replaces:** the `foreman.py` from the lockgate part 1 entry above (SHA-256 `5721b00e252fcdbfd2d7440774b2325d7e60859450062fa6412cd22db55d3be7`).
+- **Recorded after the install**, from the live file and the install commit.
+
+| File | Bytes | SHA-256 | Git blob id | Install commit |
+|---|---|---|---|---|
+| `foreman.py` | 203640 | `7653eb4e755648d4786e68360d3d1be34d09a2085a4802c71418373046a1fbed` | `e457489feddd07d06a975471914e001058a90586` | `d605bccfe7a53109c884093da91f0458d6791f45` |
+
+Machine-readable copy: [`2026-11-10-foreman-tests1line.sha256`](2026-11-10-foreman-tests1line.sha256).
