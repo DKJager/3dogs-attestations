@@ -61,3 +61,17 @@ Machine-readable copy: [`2026-11-10-foreman-tests1line.sha256`](2026-11-10-forem
 | `foreman.py` | 205394 | `b54067758baf33f79e6cbff662920e6ca0d891f6bc325594bdaf04e2dcd60e62` | `414b6533310821ddbd62a2435ab09a39905654b4` | `4400f092e2817320747690e848c18cb34fae9127` |
 
 Machine-readable copy: [`2026-11-10-foreman-2627.sha256`](2026-11-10-foreman-2627.sha256).
+
+## 2026-11-10: foreman.py, alert-coalescing window fix (harness-fix Job 2)
+
+- **Decision:** 3Dogs committee #2630 (APPROVE).
+- **Installed:** 2026-11-10 01:21:07 UTC. The switch stays in shadow mode.
+- **Replaces:** the `foreman.py` from the #2627 entry above (SHA-256 `b54067758baf33f79e6cbff662920e6ca0d891f6bc325594bdaf04e2dcd60e62`).
+- **What changed:** the alert-coalescing window now defaults to 300 s and is clamped to 0-300 s, and dead shadow code was removed.
+- **Recorded after the install**, from the live file and the install commit.
+
+| File | Bytes | SHA-256 | Git blob id | Install commit |
+|---|---|---|---|---|
+| `foreman.py` | 205272 | `0691c099c5c826a851919ea187e9facf5d7f189d970113f57dc0d01f5ecebaf0` | `18bb63126feeea74273886f64e53823a1a8d9090` | `3b37b6f8aa4fb523fc8644a4717d1c1fe705cea9` |
+
+Machine-readable copy: [`2026-11-10-foreman-2630.sha256`](2026-11-10-foreman-2630.sha256).
