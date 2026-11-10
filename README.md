@@ -105,3 +105,25 @@ Machine-readable copy: [`2026-11-10-locked-test-gate-2619.sha256`](2026-11-10-lo
 | `foreman.py` | 205435 | `5085d823ed6953c8ba7e9a848b4df3b9420128962aeadca8b2dccd69f446f0c0` | `ba2519afcd3e22cf869bb1863e4a8a61113e2aee` | `1f9b87d3b981264f040dba5923f04e291bde0ee3` |
 
 Machine-readable copy: [`2026-11-10-foreman-2631.sha256`](2026-11-10-foreman-2631.sha256).
+
+## 2026-11-10: foreman.py, contract-extras fix (harness-fix Job 2)
+
+- **Decision:** 3Dogs committee #2647 (with #2646). Installed 2026-11-10 03:40:26 UTC; the switch stays in shadow mode.
+- **Replaces:** the `foreman.py` from the #2631 entry above (SHA-256 `5085d823ed6953c8ba7e9a848b4df3b9420128962aeadca8b2dccd69f446f0c0`).
+- **Recorded after the install**, from the install commit.
+
+| File | Bytes | SHA-256 | Git blob id | Install commit |
+|---|---|---|---|---|
+| `foreman.py` | 206531 | `d691a27f4574e80869985fd74afea37fb980073c7f9031e837ab0450d5594d36` | `7c5a0cf8db9cc273e367d296478f36d7bec0fde8` | `4c6b6c5e64f13a1a0d47129cf9e30fbff5e4dc1e` |
+
+## 2026-11-10: foreman.py, judge-skip fix (harness-fix Job 2)
+
+- **Decision:** 3Dogs committee #2645 (with #2643 and design #2636). Installed 2026-11-10 03:40:32 UTC, six seconds after the entry above; the switch stays in shadow mode.
+- **Replaces:** the contract-extras `foreman.py` directly above.
+- **Recorded after the install**, from the live file and the install commit.
+
+| File | Bytes | SHA-256 | Git blob id | Install commit |
+|---|---|---|---|---|
+| `foreman.py` | 210089 | `d52567c7f8b43666efa7b099ee582728db3110c633ec853c8fb3eecb6348f524` | `57985edc922175e5f6f77a6db2e168ff93d91a03` | `4f1fd6cdc582263a509d54b9438a23a56f88f1f5` |
+
+Machine-readable copies: [`2026-11-10-foreman-2647.sha256`](2026-11-10-foreman-2647.sha256) and [`2026-11-10-foreman-2645.sha256`](2026-11-10-foreman-2645.sha256).
