@@ -47,3 +47,17 @@ Install commits in the build server's harness repository:
 | `foreman.py` | 203640 | `7653eb4e755648d4786e68360d3d1be34d09a2085a4802c71418373046a1fbed` | `e457489feddd07d06a975471914e001058a90586` | `d605bccfe7a53109c884093da91f0458d6791f45` |
 
 Machine-readable copy: [`2026-11-10-foreman-tests1line.sha256`](2026-11-10-foreman-tests1line.sha256).
+
+## 2026-11-10: foreman.py, tamper logging and final lock check (harness-fix Job 2)
+
+- **Decision:** 3Dogs committee #2627 (APPROVE WITH CHANGES).
+- **Installed:** 2026-11-10 00:55:35 UTC.
+- **Replaces:** the `foreman.py` from the TESTS1LINE entry above (SHA-256 `7653eb4e755648d4786e68360d3d1be34d09a2085a4802c71418373046a1fbed`).
+- **What changed:** the tamper alarm is now logged before the harness acts on it, and the test-lock final check runs on every exit.
+- **Recorded after the install**, from the live file and the install commit.
+
+| File | Bytes | SHA-256 | Git blob id | Install commit |
+|---|---|---|---|---|
+| `foreman.py` | 205394 | `b54067758baf33f79e6cbff662920e6ca0d891f6bc325594bdaf04e2dcd60e62` | `414b6533310821ddbd62a2435ab09a39905654b4` | `4400f092e2817320747690e848c18cb34fae9127` |
+
+Machine-readable copy: [`2026-11-10-foreman-2627.sha256`](2026-11-10-foreman-2627.sha256).
