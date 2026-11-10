@@ -75,3 +75,20 @@ Machine-readable copy: [`2026-11-10-foreman-2627.sha256`](2026-11-10-foreman-262
 | `foreman.py` | 205272 | `0691c099c5c826a851919ea187e9facf5d7f189d970113f57dc0d01f5ecebaf0` | `18bb63126feeea74273886f64e53823a1a8d9090` | `3b37b6f8aa4fb523fc8644a4717d1c1fe705cea9` |
 
 Machine-readable copy: [`2026-11-10-foreman-2630.sha256`](2026-11-10-foreman-2630.sha256).
+
+## 2026-11-10: locked_test_gate.py, safer retention command line and audit checksum (harness-fix Job 2)
+
+- **Why published now:** decision #2589 requires every new fingerprint of this module to be published before it is installed. The change carries out 3Dogs committee decisions #2619 and #2617 (change 2).
+- **Status:** staged, not installed. Published 2026-11-10 at about 01:48 UTC. The install commit will be added to this entry once it is installed.
+- **Replaces:** the `locked_test_gate.py` from the lockgate part 1 entry above (SHA-256 `630747f57f29a2212af05c96549977d0170a3a9163cd3032ec23f36f8c9f85f5`).
+- **What changes:**
+  - the command line does a dry run by default;
+  - live retention runs only with an explicit flag plus an environment switch;
+  - the audit log is sealed again after its first write;
+  - an audit-log checksum is recorded hourly.
+
+| File | Bytes | SHA-256 | Git blob id |
+|---|---|---|---|
+| `locked_test_gate.py` | 48924 | `82216fd9b20913c6d64ebdbddd9230a38bfe9dbb973a462e36e25cfc7aa74a7a` | `141f0f9e28e718653dbd1fc0df56ad3e9d5e5314` |
+
+Machine-readable copy: [`2026-11-10-locked-test-gate-2619.sha256`](2026-11-10-locked-test-gate-2619.sha256).
