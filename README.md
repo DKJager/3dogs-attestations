@@ -131,7 +131,7 @@ Machine-readable copies: [`2026-11-10-foreman-2647.sha256`](2026-11-10-foreman-2
 ## 2026-11-11: pin tool, three more figures in the line-coverage report (RSI loop, lane T)
 
 - **Decision:** 3Dogs committee #2748 (APPROVE WITH CHANGES), on the plan #2743 and the promote #2745. Change 1 of #2748 requires these fingerprints to be published outside the build server before the install.
-- **Status:** staged, not installed. Published 2026-11-11 17:52 UTC. The install result will be added to this entry after the install.
+- **Status:** installed. Published 2026-11-11 17:52 UTC. Installed 2026-11-11 18:22:38 UTC, finished 18:22:50 UTC; the check after the install passed (result below). No loop switch was turned on.
 - **What changes:** the pin tool's report gets three more entries in its `lines` block (the reachable lines, the functions never entered that do file or process work, and the missed lines). The four existing entries and everything else in the report stay as they are, and no executed count changes. Files only: no loop switch, no change to the pin set.
 - **Replaces:** `runner.py`, `SPEC.md` and `manifest.sha256` of the pin tool (first table). `pin.py` is not changed.
 
@@ -173,6 +173,8 @@ What the install must reproduce: a 16-file result table of 3,166 bytes with SHA-
 | 14 | `fb297853149aacd878e9f1e83b7c3295e38ebbbbdbda8b03eaf668ec5d3fc550` | `848a1d6c6c9b0dadb3d78b923baa67742a388174be3b11e1ad43bedb4c1fedbc` |
 | 15 | `456c436e7231d2618805cee47f5001bb6203af5348bb5e08df6a45939b113292` | `83505d983f46e38279d4a5cb6b2ee8d4ac8582b7b71815c8763979f3d61200d1` |
 | 16 | `257d6c1097ce298433393fce90512e808a85931f60f7138ada955d398b11d411` | `bd92f100aa38da48157a2312b577b5a36a039820b5dc0ff008cdc2a4e722f82a` |
+
+**Result of the install (2026-11-11 18:22 UTC):** the four files of the tool, read back after the install, carry exactly the fingerprints in the "After" table above. The 16-file result table has SHA-256 `d8df36b93abb1306e51a72afc27c68c7378c14278c7f2c7f9464567a18a2cf2f` (equal to the published value), and the digests of all 16 result blocks equal the expected ones in the table above. The 18-test order passed (18 of 18) and the check after the install passed.
 
 Other fingerprints for this install:
 
